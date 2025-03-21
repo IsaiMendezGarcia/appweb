@@ -1,60 +1,126 @@
-export function Btnservices(){
-    return(
-        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-full">
-        Servicios
-        </button>
-    );
+'use client'
+import { useState } from "react";
+import Image from 'next/image';
+
+
+
+
+export function Button({ children, ariaLabel }) {
+  return (
+      <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-full">
+          {children}
+      </button>
+  );
 }
 
+
+export function Btnservices(){
+   return <Button ariaLabel="Servicios">Servicios</Button>;
+ }
+
 export function BtnUs(){
-    return (
-        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-full">
-        Sobre nosostros
-        </button>
-    );
+  return <Button ariaLabel="Sobre Nosotros">Sobre Nosotros</Button>;
 }
 
 export function Btncontact(){
-    return(
-        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800  py-2 px-4 rounded-full">
-        Contacto
-        </button>
-    );
+  return <Button ariaLabel="Contacto">Contacto</Button>;
+}
+
+export function NavButtons() {
+  return (
+      <div className="flex gap-[1.25rem]">
+          <Btnservices />
+          <BtnUs />
+          <Btncontact />
+      </div>
+  );
 }
 
 export function Logo(){
     return(
         <div className="w-full h-25 flex items-center">
-        {/* Imagen del logo */}
-        <img
-          style={{ width: "8rem", height: "auto" }}
-          src="/images/logoP.png"
-          alt="Logo Insoel"
-        />
-  
-        {/* Estilos del Texto del logo */}
-        <span className="text-xl font-bold text-gray-800"></span>
+                <Image
+                src="/images/logoP.png"
+                alt="Logo Insoel"
+                width={128} // Ajusta el tamaño en x
+                height={64} // Ajusta el tamaño  en y
+            />
+            <span className="text-xl font-bold text-gray-800"></span>
       </div>
     );
 }
 
 
-export default function Navbar(){
-    return(
-        <section className="bg-gray-300 w-full">
-        <div className="flex items-center justify-between max-w-[75rem] mx-auto px-[.12rem]">
-          {/* Logo a la izquierda */}
-          <div className="h-[6.3125rem] w-auto">
-            <Logo />
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar el menú
+
+  const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen); // Alternar entre abrir y cerrar el menú
+  };
+
+  const closeMenu = () => {
+      setIsMenuOpen(false); // Cerrar el menú
+  };
+
+  return (
+      <section className="bg-gray-300 w-full">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
+              {/* Logo */}
+              <div className="h-[6.3125rem] w-auto">
+                  <Logo />
+              </div>
+
+              {/* Menu Hamburguesa*/}
+              <button
+                  onClick={toggleMenu}
+                  className="md:hidden focus:outline-none"
+                  aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              >
+                  {isMenuOpen ? (
+                      <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          
+                      >
+                          <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M6 18L18 6M6 6l12 12"
+                          />
+                      </svg>
+                  ) : (
+                      <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          
+                      >
+                          <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M4 6h16M4 12h16m-7 6h7"
+                          />
+                      </svg>
+                  )}
+              </button>
+
+              {/* Menú en desktop) */}
+              <div className="hidden md:flex gap-[1.25rem]">
+                  <NavButtons />
+              </div>
           </div>
-  
-          {/* Botones a la derecha */}
-          <div className="flex gap-[1.25rem]">
-            <Btnservices />
-            <BtnUs />
-            <Btncontact />
+
+          {/* Menú en (visible en móviles) */}
+          <div
+              className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-gray-300 w-full px-6 pb-4 transition-all duration-300 ease-in-out`}
+          >
+              <NavButtons closeMenu={closeMenu} />
           </div>
-        </div>
       </section>
-    );
+  );
 }
