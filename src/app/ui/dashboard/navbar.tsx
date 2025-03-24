@@ -6,12 +6,19 @@ import Image from 'next/image';
 
 
 export function Button({ children, ariaLabel }) {
-  return (
-      <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-full">
-          {children}
+    return (
+      <button 
+        style={{
+          fontFamily: 'var(--font-montserrat)', // o 'var(--font-merriweather)'
+          fontWeight: 400 // Puedes usar 300, 400, 700, 900
+        }}
+        className="bg-footernav-100 text-darktext-100 py-2 px-4 rounded-full"
+        aria-label={ariaLabel}
+      >
+        {children}
       </button>
-  );
-}
+    );
+  }
 
 
 export function Btnservices(){
@@ -38,7 +45,7 @@ export function NavButtons() {
 
 export function Logo(){
     return(
-        <div className="w-full h-25 flex items-center">
+        <div className="w-full h-10 flex items-center">
                 <Image
                 src="/images/logoP.png"
                 alt="Logo Insoel"
@@ -63,14 +70,14 @@ export default function Navbar() {
   };
 
   return (
-      <section className="bg-gray-300 w-full">
+      <section className="bg-footernav-100 w-full">
           <div className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
               {/* Logo */}
-              <div className="h-[6.3125rem] w-auto">
+              <div className="h-[2rem] w-auto">
                   <Logo />
               </div>
 
-              {/* Menu Hamburguesa*/}
+              {/* Menu */}
               <button
                   onClick={toggleMenu}
                   className="md:hidden focus:outline-none"
@@ -117,7 +124,7 @@ export default function Navbar() {
 
           {/* Menú en (visible en móviles) */}
           <div
-              className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-gray-300 w-full px-6 pb-4 transition-all duration-300 ease-in-out`}
+              className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-footernav-100 w-full px-6 pb-4 transition-all duration-300 ease-in-out`}
           >
               <NavButtons closeMenu={closeMenu} />
           </div>

@@ -11,12 +11,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-footernav-100: oklch(80.39% 0 0);      /* #cbcbcb */
+  --color-blanco-100: oklch(98.04% 0 0);         /* #f9f9f9 */
+ --color-boton-100: oklch(64.57% 0.156 252.05); /* #3498db */
+ --color-darktext-100: oklch(22.4% 0.015 257.1); /* #2f3237 */
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #010616;
-    --foreground: #ededed;
+    --foreground: #f9f9f9;
+    
   }
 }
 

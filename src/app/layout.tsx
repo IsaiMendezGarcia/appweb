@@ -1,25 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Merriweather, Montserrat } from "next/font/google";
+import { Merriweather, Montserrat, } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"]
+  weight: ["300", "400", "700", "900"],
+  variable: '--font-merriweather'
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"]
+  weight: ["300", "400", "700", "900"],
+  variable: '--font-montserrat'
 });
 
 export const metadata: Metadata = {
@@ -33,9 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${merriweather.variable} ${montserrat.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
