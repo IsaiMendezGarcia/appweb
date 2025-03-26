@@ -28,26 +28,26 @@ const Carousel = () => {
   const slides: SlideItem[] = [
     {
       id: 1,
-      image: "/images/test1.jpg",
-      mobileImage: "/images/test1.jpg", 
-      alt: "Descripción de la primera imagen",
+      image: "/images/Carousel1.png",
+      mobileImage: "/images/Carousel1.png", 
+      alt: "Imgen Insoel 1",
     },
     {
       id: 2,
-      image: "/images/test2.png",
-      mobileImage: "/images/test2.png", // Opcional
-      alt: "Descripción de la segunda imagen",
+      image: "/images/Carousel2.png",
+      mobileImage: "/images/Carousel2.png",
+      alt: "Imgagen Insoel 2",
     },
     {
       id: 3,
-      image: "/images/test3.jpg",
-      mobileImage: "/images/test3.jpg", // Opcional
-      alt: "Descripción de la tercera imagen",
+      image: "/images/Carousel3.png",
+      mobileImage: "/images/Carousel3.png",
+      alt: "Imagen Insoel 3",
     }
   ];
 
   // Altura responsiva
-  const carouselHeight = isMobile ? '25rem' : '44.125rem';
+  const carouselHeight = isMobile ? '25rem' : '39.525rem';
 
   // desplazamiento
   useEffect(() => {
