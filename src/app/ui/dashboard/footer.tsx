@@ -1,6 +1,13 @@
 import Image from 'next/image';
 
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+
     return (
         <footer className="bg-blanco-100 w-full">
             {/* Sección de contacto */}
@@ -71,18 +78,20 @@ export default function Footer() {
                     <p className="text-white text-base md:text-lg mb-4 sm:mb-0">
                         © {new Date().getFullYear()} INSOEL™. Todos los derechos reservados. {/*Obtener año actual*/}
                     </p>
-                    <a href="#" className="hover:opacity-75 transition-opacity">
-                                <Image
-                                    src="/images/up-icon.png"
-                                    alt="LinkedIn"
-                                    width={15}
-                                    height={15}
-                                    className="w-10 h-10 md:w-12 md:h-12"
-                                />
-                            </a>
-
-                </div>
-                
+                    <button 
+                        onClick={scrollToTop}
+                        className="px-5 py-2 bg-footernav-100 hover:bg-gray-300 text-white rounded-full"
+                        aria-label="Volver al inicio"
+                    >
+                    <Image
+                    src="/images/up-icon.png"
+                    alt="Volver arriba"
+                    width={50}
+                    height={50}
+                    className="w-7 h-7 object-contain"
+                     />
+                    </button>
+                </div> 
             </div>
         </footer>
     );
