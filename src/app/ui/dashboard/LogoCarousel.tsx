@@ -13,6 +13,11 @@ const logos = [
   { id: 8, name: 'UG', src: '/images/ug.png' },
   { id: 9, name: 'UNAM', src: '/images/unam.png' },
   { id: 10, name: 'UNAMAT', src: '/images/UNAMAT.png' },
+  { id: 11, name: 'Solena', src: '/images/solena.png' },
+  { id: 12, name: 'Tec', src: '/images/tec.png' },
+  { id: 13, name: 'UG', src: '/images/ug.png' },
+  { id: 14, name: 'UNAM', src: '/images/unam.png' },
+  { id: 15, name: 'UNAMAT', src: '/images/UNAMAT.png' },
 ];
 
 const LogoCarousel = () => {
@@ -32,36 +37,36 @@ const LogoCarousel = () => {
         }
         return newIndex;
       });
-    }, 3000); // Velocidad de cambio
+    }, 2000); // Velocidad de cambio
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bg-footernav-100 py-15">
+    <div className="bg-footernav-100 py-10">
       <div className="container mx-auto px-1">
      
         
         <div className="relative overflow-hidden">
           <div
             ref={carouselRef}
-            className="flex items-center gap-10 transition-transform duration-1000 ease-linear"
+            className="flex items-center gap-3 transition-transform duration-1000 ease-linear"
             style={{
-              transform: `translateX(-${currentIndex * 20}%)`,
-              width: `${logos.length * 25}%`
+              transform: `translateX(-${currentIndex * 12}%)`,
+              width: `${logos.length * 15}%`
             }}
           >
             {logos.map((logo) => (
               <div 
                 key={logo.id} 
                 className="flex-shrink-0 flex items-center justify-center"
-                style={{ width: '12%' }}
+                style={{ width: '10%' }}
               >
                {/* MOSTAR TEXTO <div className="text-3xl font-bold text-gray-700">{logo.name}</div> */}
                 <img 
                   src={logo.src} 
                   alt={logo.name} 
-                  className="h-28 object-contain transition-all duration-200"
+                  className="h-44 w-44 object-contain transition-all duration-200"
                 />
               </div>
             ))}
