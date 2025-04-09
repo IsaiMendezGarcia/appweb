@@ -12,7 +12,7 @@ export default function Footer() {
         <footer className="bg-blanco-100 w-full">
             {/* Sección de contacto */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 uppercase mb-8">
+                <h2 className="text-4xl md:text-4xl font-medium text-center text-gray-900 uppercase mb-8">
                     Contacto
                 </h2>
                 
@@ -45,18 +45,18 @@ export default function Footer() {
                     {/* Redes sociales */}
                     <div className="flex flex-col items-center space-y-6">
                         <div className="flex space-x-6">
-                            <a href="https://www.facebook.com/profile.php?id=100093302174230" className="hover:opacity-75 transition-opacity">
+                            <a href="https://www.facebook.com/profile.php?id=100093302174230" className="hover:opacity-90 transition-opacity">
                                 <Image
-                                    src="/images/facebook-ico.png"
+                                    src="/images/face-ico.png"
                                     alt="Facebook"
                                     width={48}
                                     height={48}
                                     className="w-10 h-10 md:w-12 md:h-12"
                                 />
                             </a>
-                            <a href="https://www.linkedin.com/company/insoel-mexico/" className="hover:opacity-75 transition-opacity">
+                            <a href="https://www.linkedin.com/company/insoel-mexico/" className="hover:opacity-90 transition-opacity">
                                 <Image
-                                    src="/images/linkedin-ico.png"
+                                    src="/images/linke-ico.png"
                                     alt="LinkedIn"
                                     width={48}
                                     height={48}
@@ -75,7 +75,7 @@ export default function Footer() {
             {/* Pie inferior */}
             <div className="bg-footernav-100 py-4 px-4 sm:px-6">
                 <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between">
-                    <p className="text-white text-base md:text-lg mb-4 sm:mb-0">
+                    <p className="text-white text-lg md:text-lg mb-4 sm:mb-0">
                         © {new Date().getFullYear()} INSOEL™. Todos los derechos reservados. {/*Obtener año actual*/}
                     </p>
                     <button 
@@ -84,7 +84,7 @@ export default function Footer() {
                         aria-label="Volver al inicio"
                     >
                     <Image
-                    src="/images/up-icon.png"
+                    src="/images/arrow-ico.png"
                     alt="Volver arriba"
                     width={50}
                     height={50}

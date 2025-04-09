@@ -8,9 +8,10 @@ export function Button({ children, ariaLabel }) {
       <button 
         style={{
           fontFamily: 'var(--font-montserrat)', 
-          fontWeight: 400 // tamaños a usar 300, 400, 700, 900
+          fontWeight: 400, // tamaños a usar 300, 400, 700, 900
+          fontSize: '1rem'
         }}
-        className="bg-footernav-100 text-darktext-100 py-2 px-4 rounded-full"
+        className="bg-footernav-100 text-darktext-100 py-2 px-4 rounded-full "
         aria-label={ariaLabel}
       >
         {children}

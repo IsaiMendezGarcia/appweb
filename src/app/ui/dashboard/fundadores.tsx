@@ -55,19 +55,19 @@ export default function Fundadores() {
             
             <div className="relative z-10 p-6 text-white w-auto h-auto flex items-center justify-center flex-col">
                 <div className='w-full max-w-6xl mx-auto'>
-                    <p className='text-4xl uppercase p-2 text-center'>Fundadores</p>
-                    <p className="text-lg font-light p-2 text-center max-w-3xl mx-auto">
+                    <p className='text-4xl uppercase p-2 text-center font-medium'>Fundadores</p>
+                    <p className="text-xl font-light p-2 text-center max-w-3xl mx-auto">
                         En INSOEL, lideramos la automatización con innovación y eficiencia.
                         Integramos tecnología avanzada para optimizar procesos, transformar industrias y acelerar el progreso empresarial.
                         Nuestras soluciones no solo mejoran el rendimiento,
                         sino que definen el futuro de la automatización.
                     </p>
-                    <p className="mt-4 font-light p-2 text-center">INSOEL - Automatización redefinida</p>
+                    <p className="mt-4 font-light p-2 text-center text-xl">INSOEL - Automatización redefinida</p>
                     
                     <div className="text-center mt-8">
                         <button 
                             onClick={toggleFounders}
-                            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
+                            className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
                         >
                             {showFounders ? 'OCULTAR FUNDADORES' : 'VER FUNDADORES'}
                         </button>
@@ -115,7 +115,7 @@ export default function Fundadores() {
                                             />
                                             <p className="text-xl font-bold mt-4 text-darktext-100">{founder.name}</p>
                                             <p className="italic text-darktext-100 mt-4">{founder.role}</p>
-                                            <p className="mt-4 font-light text-darktext-100">{founder.description}</p>
+                                            <p className="mt-4 font-light text-darktext-100 text-lg">{founder.description}</p>
                                         </div>
                                     ))}
                                 </div>

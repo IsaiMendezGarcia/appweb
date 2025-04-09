@@ -17,20 +17,20 @@ const Map = dynamic(
 export default function SeccionMap() {
   return (
     <section 
-      className="bg-blue-900 text-white py-12 px-4 md:px-8"
+      className="bg-darkblue-100 text-white py-12 px-4 md:px-8"
       aria-labelledby="mapa-proyectos-titulo"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-medium mb-4 uppercase"
+          <h2 className="text-4xl md:text-4xl font-medium mb-4 uppercase"
           >
             Mapa de proyectos en el país
           </h2>
         </div>
 
-        <div className="bg-blue-900 flex flex-col items-center gap-10 lg:flex-row lg:gap-40 ">
+        <div className="bg-darkblue-100 flex flex-col items-center gap-10 lg:flex-row lg:gap-40 ">
             <div>
-                <p className="text-2xl text-center md:text-3xl mx-6">
+                <p className="text-2xl font-normal text-center md:text-3xl mx-6">
                 Te invitamos a descubrir las diversas ubicaciones dentro de nuestro 
                 país donde hemos dejado nuestra marca. Cada región, cada ciudad es 
                 un testimonio de nuestro compromiso con la excelencia y la innovación 
