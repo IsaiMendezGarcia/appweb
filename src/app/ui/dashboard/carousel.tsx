@@ -28,8 +28,8 @@ const Carousel = () => {
   const slides: SlideItem[] = [
     {
       id: 1,
-      image: "/images/Carousel1.png",
-      mobileImage: "/images/Carousel1.png", 
+      image: "/images/isai.jpg",
+      mobileImage: "/images/isai.jpg", 
       alt: "Imgen Insoel 1",
     },
     {
@@ -47,7 +47,7 @@ const Carousel = () => {
   ];
 
   // Altura responsiva
-  const carouselHeight = isMobile ? '25rem' : '39.525rem';
+  const carouselHeight = isMobile ? '25rem' : '40rem';
 
   // desplazamiento
   useEffect(() => {
