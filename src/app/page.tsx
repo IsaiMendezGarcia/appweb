@@ -32,7 +32,9 @@ export default function Home() {
       <section id="colaboradores">
         <Colaboradores />
       </section>
+      <section id="contacto">
       <Footer />
+      </section>
     </>
   )
 }

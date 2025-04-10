@@ -55,7 +55,7 @@ export default function Fundadores() {
             
             <div className="relative z-10 p-6 text-white w-auto h-auto flex items-center justify-center flex-col">
                 <div className='w-full max-w-6xl mx-auto'>
-                    <p className='text-4xl uppercase p-2 text-center font-medium'>Fundadores</p>
+                    <p className='text-4xl uppercase p-2 text-center font-medium'>Sobre Nosotros</p>
                     <p className="text-xl font-light p-2 text-center max-w-3xl mx-auto">
                         En INSOEL, lideramos la automatización con innovación y eficiencia.
                         Integramos tecnología avanzada para optimizar procesos, transformar industrias y acelerar el progreso empresarial.

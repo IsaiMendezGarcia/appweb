@@ -34,8 +34,8 @@ const Carousel = () => {
     },
     {
       id: 2,
-      image: "/images/Carousel2.png",
-      mobileImage: "/images/Carousel2.png",
+      image: "/images/meli.png",
+      mobileImage: "/images/meli.png",
       alt: "Imgagen Insoel 2",
     },
     {
