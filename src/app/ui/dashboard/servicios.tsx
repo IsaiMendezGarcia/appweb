@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Servicios() {
     return (
@@ -18,9 +19,11 @@ export default function Servicios() {
             </p>
             
             <div className="flex justify-center lg:justify-end mt-2">
+            <Link href="/desarrollo">
                 <button className="bg-sky-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300 text-lg uppercase">
                     Leer Más
                 </button>
+            </Link>
             </div>
         </div>
 
@@ -62,9 +65,11 @@ export default function Servicios() {
                 <p className="text-2xl leading-tight mb-4">Las Ventajas Estratégicas de la Automatización en Tu Negocio</p>
             </div>
             <div className="flex justify-center lg:justify-start">
+                <Link href="/automatizacion">
                 <button className="bg-sky-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300 text-lg uppercase">
                     LEER MÁS
                 </button>
+                </Link>
             </div>
         </div>
     </div>

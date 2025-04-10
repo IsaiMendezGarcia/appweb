@@ -9,21 +9,30 @@ import LogoCarousel from './ui/dashboard/LogoCarousel'
 import MapView from './ui/dashboard/mapView'
 import Navbar from './ui/dashboard/navbar'
 import Servicios from './ui/dashboard/servicios'
-import dynamic from 'next/dynamic';
-
-
 
 export default function Home() {
   return (
     <>
-    <Navbar />
-    <Carousel/>
-    <Slogan />
-    <Servicios />
-    <Fundadores />
-    <SeccionMap />
-    <Colaboradores />
-    <Footer />
+      <Navbar />
+      <section id="inicio">
+        <Carousel/>
+      </section>
+      <section id="slogan">
+        <Slogan />
+      </section>
+      <section id="servicios">
+        <Servicios />
+      </section>
+      <section id="fundadores">
+        <Fundadores />
+      </section>
+      <section id="ubicacion">
+        <SeccionMap />
+      </section>
+      <section id="colaboradores">
+        <Colaboradores />
+      </section>
+      <Footer />
     </>
   )
 }

@@ -2,7 +2,7 @@
 import Footer from "../ui/dashboard/footer";
 import Navbar from "../ui/dashboard/navbar";
 
-export default function Page() {
+export default function DesarrolloPage() {
     return(
       <div>
        <Navbar />
