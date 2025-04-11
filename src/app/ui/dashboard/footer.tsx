@@ -65,7 +65,7 @@ export default function Footer() {
                             </a>
                         </div>
                         
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-9 py-2 text-lg transition-colors shadow-md">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-10 py-2 text-lg transition-colors shadow-md">
                             Escríbenos
                         </button>
                     </div>
