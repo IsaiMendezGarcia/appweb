@@ -11,7 +11,7 @@ export function Button({ children, ariaLabel, onClick }) {
         fontWeight: 400,
         fontSize: '1rem'
       }}
-      className="bg-footernav-100 text-darktext-100 py-2 px-4 rounded-full hover:bg-gray-200 transition-colors"
+      className="bg-footernav-100 text-darktext-100 py-1 px-4 rounded-full hover:bg-gray-300 transition-colors"
       aria-label={ariaLabel}
       onClick={onClick}
     >

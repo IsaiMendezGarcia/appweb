@@ -67,7 +67,7 @@ export default function Fundadores() {
                     <div className="text-center mt-8">
                         <button 
                             onClick={toggleFounders}
-                            className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
+                            className="bg-blue-800 hover:bg-blue-700 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
                         >
                             {showFounders ? 'OCULTAR FUNDADORES' : 'VER FUNDADORES'}
                         </button>
