@@ -37,8 +37,6 @@ export default function Footer() {
         alert('Gracias por contactarnos. Nos pondremos en contacto pronto.');
     };
 
-
-
     return (
         <footer className="bg-blanco-100 w-full">
             {/* Sección de contacto */}
@@ -108,7 +106,7 @@ export default function Footer() {
                         
                         <button 
                             onClick={() => setIsModalOpen(true)}
-                            className="bg-darkblue-100 hover:bg-blue-900 text-white font-medium rounded-full px-10 py-2 text-lg transition-colors shadow-md"
+                            className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium rounded-full px-10 py-2 text-lg transition-colors shadow-md"
                         >
                             Escríbenos
                         </button>
@@ -140,7 +138,7 @@ export default function Footer() {
 
             {/* Modal de Contacto */}
             {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
                     <div className="relative bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
                         {/* Encabezado */}
                         <div className="sticky top-0 bg-white z-10 flex justify-between items-center border-b p-6">
@@ -239,8 +237,8 @@ export default function Footer() {
                                     disabled={isSubmitting}
                                 >
                                     <option value="">Seleccione un servicio</option>
-                                    <option value="Automatizacion">Automatizacion</option>
-                                    <option value="Desarrollo">Desarrollo Tecnologico</option>
+                                    <option value="Automatizacion">Automatización</option>
+                                    <option value="Desarrollo">Desarrollo Tecnológico</option>
                                 </select>
                             </div>
                             
@@ -270,7 +268,7 @@ export default function Footer() {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="px-6 py-2 bg-darkblue-100 text-white rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-colors disabled:opacity-70"
+                                    className="px-6 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-colors disabled:opacity-70"
                                     disabled={isSubmitting}
                                 >
                                     {isSubmitting ? (

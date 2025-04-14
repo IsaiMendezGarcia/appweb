@@ -118,7 +118,7 @@ interface ContactModalProps {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
         <div 
-          className="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity"
+          className="absolute inset-0 bg-amber-400 bg-opacity-0 transition-opacity"
           onClick={onClose}
         />
         

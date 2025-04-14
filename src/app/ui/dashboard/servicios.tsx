@@ -20,7 +20,7 @@ export default function Servicios() {
             
             <div className="flex justify-center lg:justify-end mt-2">
             <Link href="/desarrollo">
-                <button className="bg-sky-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300 text-lg uppercase">
+                <button className="bg-sky-500 hover:bg-blue-600 tracking-[0.2em] text-white font-medium py-3 px-15 rounded-full transition duration-300 text-lg uppercase">
                     Leer Más
                 </button>
             </Link>
@@ -66,7 +66,7 @@ export default function Servicios() {
             </div>
             <div className="flex justify-center lg:justify-start">
                 <Link href="/automatizacion">
-                <button className="bg-sky-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300 text-lg uppercase">
+                <button className="bg-sky-500 hover:bg-blue-600 tracking-[0.2em] text-white font-medium  py-3 px-15 rounded-full transition duration-300 text-lg uppercase">
                     LEER MÁS
                 </button>
                 </Link>
