@@ -28,8 +28,8 @@ const Carousel = () => {
   const slides: SlideItem[] = [
     {
       id: 1,
-      image: "/images/isai.jpg",
-      mobileImage: "/images/isai.jpg", 
+      image: "/images/David.jpg",
+      mobileImage: "/images/David.jpg", 
       alt: "Imgen Insoel 1",
     },
     {
@@ -40,8 +40,8 @@ const Carousel = () => {
     },
     {
       id: 3,
-      image: "/images/Carousel3.png",
-      mobileImage: "/images/Carousel3.png",
+      image: "/images/Edwin.jpg",
+      mobileImage: "/images/Edwin.jpg",
       alt: "Imagen Insoel 3",
     }
   ];

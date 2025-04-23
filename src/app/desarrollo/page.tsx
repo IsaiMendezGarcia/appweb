@@ -1,14 +1,14 @@
 'use client'
+import Navbarproyectos from "../ui/componentes_generales/navbarcuerpo";
 import Footer from "../ui/dashboard/footer";
-import Navbar from "../ui/dashboard/navbar";
+import ProjectsPage from "../ui/desarrollo/projectVista";
+
 
 export default function DesarrolloPage() {
     return(
       <div>
-       <Navbar />
-       <div className="h-lvh">
-        <p>Cuerpo la pag</p>
-       </div>
+       <Navbarproyectos />
+       <ProjectsPage />
        <Footer />
       </div>
     );

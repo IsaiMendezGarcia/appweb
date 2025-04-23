@@ -17,7 +17,7 @@ export function Logo(){
   );
 }
 
-export default function Navbarcuerpo() {
+export default function Navbarproyectos() {
 
   return (
     <section className="bg-footernav-100 w-full "> {/*sticky top-0 z-50 Si quiero fijar mi navbar*/}
