@@ -16,15 +16,13 @@ export function Button({ children, ariaLabel }) {
 
 export default function Slogan(){
 return(
-        <div className="bg-blanco-100 flex flex-col items-center text-center py-10 w-full">
-         <div className="h-40 w-32rem bg-blanco-100 flex-row">
+        <div className="bg-footernav-100 flex flex-col items-center text-center py-10 w-full">
+         <div className="h-40 w-32rem bg-footernav-100 flex-row">
             <p className="text-blue-950 text-2xl underline font-montserrat font-semibold ">Materializamos tus ideas</p>
                 <div className="my-2"></div> 
                     <p className="text-black text-4xl uppercase font-bold font-montserrat">Automatización y control</p>
                 <div className="my-3"></div>
-                <div className="mt-6">  
-                    <Button ariaLabel="Conocer más">Conoce más →</Button>
-                </div>
+
         </div>
         </div>
     );

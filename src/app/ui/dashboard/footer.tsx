@@ -41,7 +41,7 @@ export default function Footer() {
         <footer className="bg-blanco-100 w-full">
             {/* Sección de contacto */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <h2 className="text-4xl md:text-4xl font-medium text-center text-gray-900 uppercase mb-8">
+                <h2 className="text-4xl md:text-4xl font-medium text-center text-blue-950 uppercase mb-8">
                     Contacto
                 </h2>
                 
@@ -59,13 +59,13 @@ export default function Footer() {
                         </div>
                         
                         <div className="space-y-4 text-center md:text-left">
-                            <p className="text-lg md:text-xl text-gray-800">
+                            <p className="text-lg md:text-xl text-blue-950">
                                 Adolfo Ruíz Cortínez 34. Uriangato, Gto.
                             </p>
-                            <p className="text-lg md:text-xl text-gray-800">
+                            <p className="text-lg md:text-xl text-blue-950">
                                 insoel.ventas@gmail.com
                             </p>
-                            <p className="text-lg md:text-xl text-gray-800">
+                            <p className="text-lg md:text-xl text-blue-950">
                                 Tel. (442) 331 3911
                             </p>
                         </div>
@@ -122,7 +122,7 @@ export default function Footer() {
                     </p>
                     <button 
                         onClick={scrollToTop}
-                        className="px-5 py-2 bg-footernav-100 hover:bg-gray-300 text-white rounded-full transition-colors"
+                        className="px-5 py-2 bg-footernav-100 hover:bg-white text-white rounded-full transition-colors"
                         aria-label="Volver al inicio"
                     >
                         <Image
@@ -145,7 +145,7 @@ export default function Footer() {
                             <h2 className="text-2xl font-bold text-gray-800">Contacta con INSOEL</h2>
                             <button 
                                 onClick={() => setIsModalOpen(false)}
-                                className="text-gray-500 hover:text-gray-700 focus:outline-none"
+                                className="text-gray-600 hover:text-gray-700 focus:outline-none"
                                 aria-label="Cerrar modal"
                                 disabled={isSubmitting}
                             >
