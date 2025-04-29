@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -59,7 +58,7 @@ export const GenericCards = ({
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+              <h3 className="text-xl text-gray-700 font-bold mb-2">{item.title}</h3>
               <p className="text-gray-700 mb-4 line-clamp-3">{item.description}</p>
               
               {/* Etiquetas si existen */}

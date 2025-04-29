@@ -1,33 +1,33 @@
-import ProjectAutoCards from '../automatizacion/projectAutoCards';
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  id?: number; // Optional id property
-}
+import { JSX } from 'react';
+import { GenericCards } from '../../ui/componentes_generales/GenericCards';
 
-const projectsData = [
+export default function ProjectAutoVista(): JSX.Element {
+  const autoProjects = [
     {
-        id: 1,
-        title: 'Integración de un panel de control dentro de un Biorreactor',
-        description: 'Biorreactor automatizado para hidrógeno colaboración con  UNAM, Tec y SOLENA.',
-        image: '/images/Test.jpg',
-    },
-    {
-        id: 2,
-        title: 'Dinamómetro',
-        description: 'UNAM e INSOEL desarrollaron un dinamómetro innovador para probar motores, con instrumentación avanzada y potencial de patente.',
-        image: '/images/Test.jpg',
-    },
-] satisfies Project[]; // Aseguramos que cumple con el tipo Project
-
-const ProjectsAutoPage = () => {
+      id: 1,
+      title: 'Integración de un panel de control dentro de un Biorreactor',
+      description: 'Biorreactor automatizado para hidrógeno colaboración con  UNAM, Tec y SOLENA.',
+      image: '/images/Test.jpg',
+      slug: 'panel-de-control-biorreactor',
+  },
+  {
+      id: 2,
+      title: 'Dinamómetro',
+      description: 'UNAM e INSOEL desarrollaron un dinamómetro innovador para probar motores, con instrumentación avanzada y potencial de patente.',
+      image: '/images/Test.jpg',
+      slug: 'dinamometro',
+  },
+  ] 
+  
   return (
-    <main className='bg-blanco-100 py-5'>
-      <h1 className="text-3xl font-bold text-center text-blue-950">Nuestros Proyectos</h1>
-      <ProjectAutoCards projects={projectsData} />
+    <main>
+       <div className='bg-blanco-100 p-4'>
+      <h1 className='text-2xl text-blue-950 font-bold text-center pt-3'>Proyectos de Automatización</h1>
+         <GenericCards 
+           items={autoProjects} 
+           basePath="automatizacion" 
+           />
+      </div>
     </main>
   );
 };
-
-export default ProjectsAutoPage;

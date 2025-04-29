@@ -1,14 +1,14 @@
 'use client'
-import ProjectsAutoPage from "../ui/automatizacion/projectAutoVista";
 import Navbarcuerpo from "../ui/componentes_generales/navbarcuerpo";
 import Footer from "../ui/dashboard/footer";
+import ProjectAutoVista from "../ui/automatizacion/projectAutoVista";
 
 
 export default function AutomatizacionPage() {
     return(
       <div>
        <Navbarcuerpo />
-       <ProjectsAutoPage />
+       <ProjectAutoVista />
        <Footer />
       </div>
     );
