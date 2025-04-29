@@ -9,47 +9,28 @@ interface Project {
 const projectsData = [
     {
         id: 1,
-        title: 'Proyecto 1',
-        description: 'Descripción detallada del primer proyecto. Este proyecto implementa soluciones innovadoras para problemas complejos.',
+        title: 'Sistema administración de Consultas',
+        description: 'Sistema de administración de consultas con códigos médicos, instrucciones de dosificación y datos municipales administrativos',
         image: '/images/Test.jpg',
     },
     {
         id: 2,
-        title: 'Proyecto 2',
-        description: 'Descripción detallada del segundo proyecto. Este proyecto se centra en la sostenibilidad y el medio ambiente.',
+        title: 'Sistema de Punto de Venta',
+        description: 'Sistema POS para paletería La Michoacana: gestiona ventas de paletas, nieves y aguas con control de inventario y precios.',
         image: '/images/Test.jpg',
     },
     {
         id: 3,
-        title: 'Proyecto 3',
-        description: 'Descripción detallada del tercer proyecto. Este proyecto utiliza tecnología avanzada para mejorar la eficiencia.',
+        title: 'Sistema de administración de Becas',
+        description: 'Sistema de Administración de Becas: gestión integral para registro, seguimiento y asignación de apoyos educativos.',
         image: '/images/Test.jpg',
     },
-    {
-        id: 4,
-        title: 'Proyecto 4',
-        description: 'Descripción detallada del cuarto proyecto. Este proyecto busca fomentar la educación y el aprendizaje continuo.',
-        image: '/images/Test.jpg',
-    },
-    {
-        id: 5,
-        title: 'Proyecto 5',
-        description: 'Descripción detallada del quinto proyecto. Este proyecto promueve la inclusión y la diversidad en la tecnología.',
-        image: '/images/Test.jpg',
-    },
-    {
-        id: 6,
-        title: 'Proyecto 6',
-        description: 'Descripción detallada del sexto proyecto. Este proyecto se enfoca en la salud y el bienestar de las comunidades.',
-        image: '/images/Test.jpg',
-    },
-
 ] satisfies Project[]; // Aseguramos que cumple con el tipo Project
 
 const ProjectsPage = () => {
   return (
     <main className='bg-blanco-100 py-5'>
-      <h1 className="text-3xl font-bold text-center text-gray-800">Nuestros Proyectos</h1>
+      <h1 className="text-3xl font-bold text-center text-blue-950 justify-center">Nuestros Proyectos</h1>
       <ProjectCards projects={projectsData} />
     </main>
   );

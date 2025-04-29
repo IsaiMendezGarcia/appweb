@@ -42,7 +42,7 @@ const ProjectAutoCards = ({ projects }: ProjectCardsProps) => {
             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             {/* Imagen del proyecto */}
-            <div className="relative h-48 w-full">
+            <div className="relative h-56 w-full">
               <Image 
                 src={project.image} 
                 alt={project.title} 
@@ -55,16 +55,21 @@ const ProjectAutoCards = ({ projects }: ProjectCardsProps) => {
             
             {/* Contenido de la tarjeta */}
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-800 mb-4 line-clamp-3">{project.description}</p>
-              
-              {/* Botón Ver más */}
-              <Link 
-                href={`/projects/${project.id}`} 
-                className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+            <div> 
+                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              </div>
+              <div>
+                  <p className="text-blue-950 mb-4 line-clamp-3">{project.description}</p>
+              </div>
+              <div className='flex justify-end pt-5'>
+                  {/* Botón Ver más */}
+                  <Link 
+                   href={`/projects/${project.id}`} //ruta dinámica para cada proyecto
+                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-8 rounded-full transition-colors duration-300"
               >
-                Ver más
-              </Link>
+                      Ver más
+                    </Link>
+              </div>
             </div>
           </div>
         ))}
@@ -73,7 +78,7 @@ const ProjectAutoCards = ({ projects }: ProjectCardsProps) => {
       {/* Paginación */}
       {projects.length > projectsPerPage && (
         <div className="flex justify-center mt-8">
-          <nav className="flex items-center gap-1">
+          <nav className="flex items-end gap-1">
             {Array.from({ length: Math.ceil(projects.length / projectsPerPage) }).map((_, index) => (
               <button
                 key={index}

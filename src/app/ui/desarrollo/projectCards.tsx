@@ -33,16 +33,16 @@ const ProjectCards = ({ projects }: ProjectCardsProps) => {
   const paginate = (pageNumber: number): void => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-blanco-100 text-gray-800">
+    <div className="container mx-auto px-4 py-8 bg-blanco-100 text-blue-950">
       {/* Lista de tarjetas */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentProjects.map((project) => (
           <div 
             key={project.id} 
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            className=" bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             {/* Imagen del proyecto */}
-            <div className="relative h-48 w-full">
+            <div className="relative h-56 w-full">
               <Image 
                 src={project.image} 
                 alt={project.title} 
@@ -55,16 +55,21 @@ const ProjectCards = ({ projects }: ProjectCardsProps) => {
             
             {/* Contenido de la tarjeta */}
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-800 mb-4 line-clamp-3">{project.description}</p>
-              
-              {/* Botón Ver más */}
-              <Link 
-                href={`/projects/${project.id}`} 
-                className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+              <div> 
+                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              </div>
+              <div>
+                  <p className="text-blue-950 mb-4 line-clamp-3">{project.description}</p>
+              </div>
+              <div className='flex justify-end pt-5'>
+                  {/* Botón Ver más */}
+                  <Link 
+                   href={`/projects/${project.id}`} //ruta dinámica para cada proyecto
+                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-8 rounded-full transition-colors duration-300"
               >
-                Ver más
-              </Link>
+                      Ver más
+                    </Link>
+              </div>
             </div>
           </div>
         ))}
