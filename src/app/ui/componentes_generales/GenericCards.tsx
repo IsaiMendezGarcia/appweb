@@ -8,7 +8,8 @@ export type CardItem = {
   slug: string;
   title: string;
   description: string;
-  image: string;
+  mainimage: string;
+  gallery: string[];
   tags?: string[];
   // Campos adicionales específicos si los necesitas
 };
@@ -50,7 +51,7 @@ export const GenericCards = ({
           <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative h-56 w-full">
               <Image
-                src={item.image}
+                src={item.mainimage}
                 alt={`Imagen de ${item.title}`}
                 fill
                 className="object-cover"

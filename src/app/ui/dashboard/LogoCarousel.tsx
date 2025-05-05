@@ -43,7 +43,7 @@ const LogoCarousel = () => {
   }, []);
 
   return (
-    <div className="bg-footernav-100 py-10">
+    <div className="bg-footernav-100 py-5">
       <div className="container mx-auto px-1">
      
         

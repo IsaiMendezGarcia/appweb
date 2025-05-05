@@ -11,7 +11,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-footernav-100: oklch(0.81 0.0091 247.84);              /* #bdc2c7 Cold Gray */ 
+  --color-footernav-100: oklch(0.94 0 239);              /* #ececec Gray */ 
   --color-blanco-100: oklch(0.98 0 0);                          /* #f9f9f9 White*/
  --color-boton-100: oklch(0.65 0.1347 242.69);                 /* #3498db Light blue*/
  --color-darktext-100: oklch(0.32 0.0099 260.71);              /*#2f3237 Dark Gray*/

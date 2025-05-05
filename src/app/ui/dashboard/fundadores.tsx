@@ -29,7 +29,7 @@ export default function Fundadores() {
             name: "MBA. M.I. DAVID BALCAZAR",
             role: "Ingeniero en automatización y electrónica",
             description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
-            image: "/images/user.png"
+            image: "/images/David1.png"
         },
         {
             name: "M.I. EDWIN LARA",
