@@ -58,7 +58,7 @@ export const GenericCards = ({
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 flex flex-col justify-between">
               <h3 className="text-xl text-gray-700 font-bold mb-2">{item.title}</h3>
               <p className="text-gray-700 mb-4 line-clamp-3">{item.description}</p>
               
@@ -72,13 +72,14 @@ export const GenericCards = ({
                   ))}
                 </div>
               )}
-              
+              <div className="flex items-end justify-end mt-auto">
               <Link
                 href={`/${basePath}/${item.slug}`}
                 className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-6 rounded-full transition-colors duration-300"
               >
                 Ver más
               </Link>
+              </div>
             </div>
           </div>
         ))}

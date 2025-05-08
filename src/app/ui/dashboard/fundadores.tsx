@@ -23,19 +23,19 @@ export default function Fundadores() {
             name: "ING. ALEJANDRO ZENDEJAS",
             role: "Jefe de Instrumentación",
             description: "Ingeniero en comunicaciones y electrónica con una maestría en ingeniería Electrónica Aplicada. Ha desarrollado proyectos de automatización e innovación y actualmente cursa un MBA en Business Analytics.",
-            image: "/images/alejandro.png"
+            image: "/images/fundadores/alejandro.png"
         },
         {
             name: "MBA. M.I. DAVID BALCAZAR",
             role: "Ingeniero en automatización y electrónica",
             description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
-            image: "/images/David1.png"
+            image: "/images/fundadores/David1.png"
         },
         {
             name: "M.I. EDWIN LARA",
             role: "Ingeniero de Software",
             description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
-            image: "/images/edwin2.png"
+            image: "/images/fundadores/edwin2.png"
         }
     ];
 

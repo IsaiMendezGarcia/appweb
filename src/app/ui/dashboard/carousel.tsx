@@ -28,20 +28,20 @@ const Carousel = () => {
   const slides: SlideItem[] = [
     {
       id: 1,
-      image: "/images/David.jpg",
-      mobileImage: "/images/David.jpg", 
+      image: "/images/carrousel/David.jpg",
+      mobileImage: "/images/carrousel/David.jpg", 
       alt: "Imgen Insoel 1",
     },
     {
       id: 2,
-      image: "/images/meli.jpg",
-      mobileImage: "/images/meli.jpg",
-      alt: "Imgagen Insoel 2",
+      image: "/images/carrousel/meli.jpg",
+      mobileImage: "/images/carrousel/meli.jpg",
+      alt: "Imagen Insoel 2",
     },
     {
       id: 3,
-      image: "/images/efrain.jpg",
-      mobileImage: "/images/efrain.jpg",
+      image: "/images/carrousel/efrain.jpg",
+      mobileImage: "/images/carrousel/efrain.jpg",
       alt: "Imagen Insoel 3",
     }
   ];

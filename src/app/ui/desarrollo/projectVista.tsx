@@ -8,8 +8,8 @@ export const devsProjects = [
     id: 1,
     title: 'Sistema administración de Consultas',
     description: 'Sistema de administración de consultas con códigos médicos, instrucciones de dosificación y datos municipales administrativos',
-    mainimage: '/images/Test.jpg',
-    gallery: [],
+    mainimage: '/images/thumbnails/thumbnail5.png',
+    gallery: ['/images/proyectos/SystemFarm.png'],
     slug: 'sistema-administracion-consultas',
 },
 {
@@ -17,8 +17,8 @@ export const devsProjects = [
     id: 2,
     title: 'Sistema de Punto de Venta',
     description: 'Sistema POS para paletería La Michoacana: gestiona ventas de paletas, nieves y aguas con control de inventario y precios.',
-    mainimage: '/images/Test.jpg',
-    gallery: [],
+    mainimage: '/images/thumbnails/thumbnail4.png',
+    gallery: ['/images/proyectos/SystemFarm.png'],
     slug: 'sistema-punto-venta',
 },
 {
@@ -26,8 +26,8 @@ export const devsProjects = [
     id: 3,
     title: 'Sistema de administración de Becas',
     description: 'Sistema de Administración de Becas: gestión integral para registro, seguimiento y asignación de apoyos educativos.',
-    mainimage: '/images/Test.jpg',
-    gallery: [],
+    mainimage: '/images/thumbnails/thumbnail3.png',
+    gallery: ['/images/proyectos/SystemFarm.png'],
     slug: 'sistema-administracion-becas',
 },
 ];

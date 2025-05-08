@@ -55,7 +55,7 @@ export function Logo(){
   return(
     <div className="w-full h-10 flex items-center">
       <Image
-        src="/images/logoP.png"
+        src="/images/logos/logoP.png"
         alt="Logo Insoel"
         width={128}
         height={64}

@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 
 // Solución para iconos desaparecidos en React-Leaflet v4+
 const DefaultIcon = L.icon({
-  iconUrl: '/images/localizacion.png',
-  iconRetinaUrl: '/images/localizacion.png',
+  iconUrl: '/images/icons/localizacion.png',
+  iconRetinaUrl: '/images/icons/localizacion.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
   iconSize: [25, 30],
   iconAnchor: [12, 41],

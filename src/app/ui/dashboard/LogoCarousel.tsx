@@ -2,22 +2,22 @@ import { useEffect, useRef, useState } from 'react';
 
 {/* array de logos*/}
 const logos = [
-  { id: 1, name: 'Solena', src: '/images/solena.png' },
-  { id: 2, name: 'Tec', src: '/images/tec.png' },
-  { id: 3, name: 'UG', src: '/images/ug.png' },
-  { id: 4, name: 'UNAM', src: '/images/unam.png' },
-  { id: 5, name: 'UNAMAT', src: '/images/UNAMAT.png' },
+  { id: 1, name: 'Solena', src: '/images/colaboradores/solena.png' },
+  { id: 2, name: 'Tec', src: '/images/colaboradores/tec.png' },
+  { id: 3, name: 'UG', src: '/images/colaboradores/ug.png' },
+  { id: 4, name: 'UNAM', src: '/images/colaboradores/unam.png' },
+  { id: 5, name: 'UNAMAT', src: '/images/colaboradores/UNAMAT.png' },
   // Duplicamos los logos para un efecto de carrusel infinito
-  { id: 6, name: 'Solena', src: '/images/solena.png' },
-  { id: 7, name: 'Tec', src: '/images/tec.png' },
-  { id: 8, name: 'UG', src: '/images/ug.png' },
-  { id: 9, name: 'UNAM', src: '/images/unam.png' },
-  { id: 10, name: 'UNAMAT', src: '/images/UNAMAT.png' },
-  { id: 11, name: 'Solena', src: '/images/solena.png' },
-  { id: 12, name: 'Tec', src: '/images/tec.png' },
-  { id: 13, name: 'UG', src: '/images/ug.png' },
-  { id: 14, name: 'UNAM', src: '/images/unam.png' },
-  { id: 15, name: 'UNAMAT', src: '/images/UNAMAT.png' },
+  { id: 6, name: 'Solena', src: '/images/colaboradores/solena.png' },
+  { id: 7, name: 'Tec', src: '/images/colaboradores/tec.png' },
+  { id: 8, name: 'UG', src: '/images/colaboradores/ug.png' },
+  { id: 9, name: 'UNAM', src: '/images/colaboradores/unam.png' },
+  { id: 10, name: 'UNAMAT', src: '/images/colaboradores/UNAMAT.png' },
+  { id: 11, name: 'Solena', src: '/images/colaboradores/solena.png' },
+  { id: 12, name: 'Tec', src: '/images/colaboradores/tec.png' },
+  { id: 13, name: 'UG', src: '/images/colaboradores/ug.png' },
+  { id: 14, name: 'UNAM', src: '/images/colaboradores/unam.png' },
+  { id: 15, name: 'UNAMAT', src: '/images/colaboradores/UNAMAT.png' },
 ];
 
 const LogoCarousel = () => {

@@ -31,7 +31,7 @@ export default function Servicios() {
         <div className="w-2xs lg:w-1/2 mb-8 lg:mb-0 order-2 lg:order-none ">
             <div className="flex justify-center">
                 <Image
-                    src="/images/icon-dashboard1.png"
+                    src="/images/icons/icon-dashboard1.png"
                     alt="Icono Dashboard"
                     width={400}
                     height={400}
@@ -48,7 +48,7 @@ export default function Servicios() {
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 order-2 lg:order-none ">
             <div className="flex justify-center">
                 <Image
-                    src="/images/icon-dashboard2.png"
+                    src="/images/icons/icon-dashboard2.png"
                     alt="Icono Dashboard"
                     width={400}
                     height={400}

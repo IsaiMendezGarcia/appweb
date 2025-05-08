@@ -22,19 +22,25 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         <article className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-blue-950 mb-6 text-center">{project.title}</h1>
           
-          <div className="relative h-64 w-full mb-6 rounded-lg overflow-hidden">
+          <div className="relative h-1/5 w-full mb-6 rounded-lg overflow-hidden">
             <img 
               src={project.mainimage} 
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover text-blue-950"
             />
           </div>
           
           <div className="prose">
-            <h2 className="text-2xl font-semibold text-blue-950 mb-4">Descripción</h2>
+            <h2 className="text-3xl font-medium text-blue-950 mb-4">Descripción</h2>
             <p className="text-gray-700 mb-4">{project.description}</p>   
-            <h2 className="text-2xl font-semibold text-blue-950 mb-4">Tecnologías Utilizadas</h2>
-            {/* Más secciones según necesidad */}
+          </div>
+
+          <div className="relative h-1/5 w-full mb-6 rounded-lg overflow-hidden">
+            <img 
+              src={project.mainimage} 
+              alt={project.title}
+              className="w-full h-full object-cover text-blue-950"
+            />
           </div>
         </article>
       </main>

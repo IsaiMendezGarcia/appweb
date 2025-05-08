@@ -82,7 +82,7 @@ export default function Footer() {
                                 className="hover:opacity-90 transition-opacity"
                             >
                                 <Image
-                                    src="/images/face-ico.png"
+                                    src="/images/icons/face-ico.png"
                                     alt="Facebook"
                                     width={48}
                                     height={48}
@@ -96,7 +96,7 @@ export default function Footer() {
                                 className="hover:opacity-90 transition-opacity"
                             >
                                 <Image
-                                    src="/images/linke-ico.png"
+                                    src="/images/icons/linke-ico.png"
                                     alt="LinkedIn"
                                     width={48}
                                     height={48}
@@ -118,7 +118,7 @@ export default function Footer() {
             {/* Pie inferior */}
             <div className="bg-footernav-100 py-4 px-4 sm:px-6">
                 <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between">
-                    <p className="text-white text-lg md:text-lg mb-4 sm:mb-0">
+                    <p className="text-darktext-100 text-lg md:text-lg mb-4 sm:mb-0">
                         © {new Date().getFullYear()} INSOEL™. Todos los derechos reservados.
                     </p>
                     <button 
@@ -127,7 +127,7 @@ export default function Footer() {
                         aria-label="Volver al inicio"
                     >
                         <Image
-                            src="/images/arrow-ico.png"
+                            src="/images/icons/arrow-ico.png"
                             alt="Volver arriba"
                             width={50}
                             height={50}
