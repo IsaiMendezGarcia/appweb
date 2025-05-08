@@ -60,15 +60,39 @@ export default function Footer() {
                         </div>
                         
                         <div className="space-y-4 text-center md:text-left">
-                            <p className="text-lg md:text-xl text-blue-950">
-                                Adolfo Ruíz Cortínez 34. Uriangato, Gto.
-                            </p>
-                            <p className="text-lg md:text-xl text-blue-950">
-                                insoel.ventas@gmail.com
-                            </p>
-                            <p className="text-lg md:text-xl text-blue-950">
+                            <div className="flex items-center space-x-2">
+                                <Image
+                                    src="/images/icons/home.png"
+                                    alt="Ubicación"
+                                    width={24}
+                                    height={24}
+                                    />
+                                <p className="text-lg md:text-xl text-blue-950">
+                                    Adolfo Ruíz Cortínez 34. Uriangato, Gto.
+                                </p>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <Image
+                                    src="/images/icons/correo.png"
+                                    alt="Email"
+                                    width={24}
+                                    height={24}
+                                    />
+                                <p className="text-lg md:text-xl text-blue-950">
+                                    insoel.ventas@gmail.com
+                                </p>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <Image
+                                    src="/images/icons/cel.png"
+                                    alt="Teléfono"
+                                    width={24}
+                                    height={24}
+                                    />
+                                <p className="text-lg md:text-xl text-blue-950">
                                 Tel. (442) 331 3911
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     
