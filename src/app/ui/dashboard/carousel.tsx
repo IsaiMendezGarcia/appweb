@@ -34,16 +34,35 @@ const Carousel = () => {
     },
     {
       id: 2,
-      image: "/images/carrousel/meli.jpg",
-      mobileImage: "/images/carrousel/meli.jpg",
+      image: "/images/carrousel/efrain.jpg",
+      mobileImage: "/images/carrousel/efrain.jpg",
       alt: "Imagen Insoel 2",
     },
     {
       id: 3,
-      image: "/images/carrousel/efrain.jpg",
-      mobileImage: "/images/carrousel/efrain.jpg",
+      image: "/images/carrousel/meli.jpg",
+      mobileImage: "/images/carrousel/meli.jpg",
       alt: "Imagen Insoel 3",
+    },
+    {
+      id: 4,
+      image: "/images/carrousel/efrain2.jpg",
+      mobileImage: "/images/carrousel/efrain2.jpg", 
+      alt: "Imgen Insoel 4",
+    },
+    {
+      id: 5,
+      image: "/images/carrousel/isai.jpg",
+      mobileImage: "/images/carrousel/isai.jpg",
+      alt: "Imagen Insoel 5",
+    },
+    {
+      id: 6,
+      image: "/images/carrousel/29.jpg",
+      mobileImage: "/images/carrousel/29.jpg",
+      alt: "Imagen Insoel 6",
     }
+    
   ];
 
   // Altura responsiva
@@ -53,7 +72,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000);
+    },2500); // Cambia cada 2.5 segundos
     return () => clearInterval(interval);
   }, [slides.length]);
 

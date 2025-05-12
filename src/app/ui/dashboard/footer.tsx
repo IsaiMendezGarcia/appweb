@@ -64,8 +64,8 @@ export default function Footer() {
                                 <Image
                                     src="/images/icons/home.png"
                                     alt="Ubicación"
-                                    width={24}
-                                    height={24}
+                                    width={34}
+                                    height={34}
                                     />
                                 <p className="text-lg md:text-xl text-blue-950">
                                     Adolfo Ruíz Cortínez 34. Uriangato, Gto.
@@ -75,8 +75,8 @@ export default function Footer() {
                                 <Image
                                     src="/images/icons/correo.png"
                                     alt="Email"
-                                    width={24}
-                                    height={24}
+                                    width={34}
+                                    height={34}
                                     />
                                 <p className="text-lg md:text-xl text-blue-950">
                                     insoel.ventas@gmail.com
@@ -86,8 +86,8 @@ export default function Footer() {
                                 <Image
                                     src="/images/icons/cel.png"
                                     alt="Teléfono"
-                                    width={24}
-                                    height={24}
+                                    width={34}
+                                    height={34}
                                     />
                                 <p className="text-lg md:text-xl text-blue-950">
                                 Tel. (442) 331 3911

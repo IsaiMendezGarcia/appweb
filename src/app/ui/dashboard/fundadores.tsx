@@ -41,20 +41,31 @@ export default function Fundadores() {
 
     return (
         <div className="relative w-full min-h-19">
-            <div className="absolute inset-0 z-0">
-                <Image
-                    src="/images/fondo3.png" 
-                    alt="Fondo Fundadores"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={100}
-                    className="opacity-60" 
-                />
-                <div className="absolute inset-0 bg-black/10"></div>
-            </div>
+                    <div className="absolute inset-0 z-0">
+                        <Image
+                            src="/images/fondo.png" 
+                            alt="Fondo Fundadores"
+                            layout="fill"
+                            objectFit="cover"
+                            quality={100}
+                            className="opacity-60" 
+                        />
+                        <div className="absolute inset-0 bg-black/10"></div>
+                    </div>
             
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> 
             <div className="relative z-10 p-6 text-white w-auto h-auto flex items-center justify-center flex-col">
                 <div className='w-full max-w-6xl mx-auto'>
+                    <div className="flex items-center justify-center">
+
+
+
+
+                    </div>
+
+
+
                     <p className='text-4xl uppercase p-2 text-center font-medium'>Sobre Nosotros</p>
                     <p className="text-xl font-light p-2 text-center max-w-3xl mx-auto">
                         En INSOEL, lideramos la automatización con innovación y eficiencia.

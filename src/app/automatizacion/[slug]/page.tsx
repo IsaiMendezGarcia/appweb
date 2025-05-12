@@ -29,18 +29,11 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               className="w-full h-full object-cover text-blue-950"
             />
           </div>
-          
+
+            {/*Descripción del proyecto*/}
           <div className="prose">
             <h2 className="text-3xl font-medium text-blue-950 mb-4">Descripción</h2>
             <p className="text-gray-700 mb-4">{project.description}</p>   
-          </div>
-
-          <div className="relative h-1/5 w-full mb-6 rounded-lg overflow-hidden">
-            <img 
-              src={project.mainimage} 
-              alt={project.title}
-              className="w-full h-full object-cover text-blue-950"
-            />
           </div>
         </article>
       </main>
