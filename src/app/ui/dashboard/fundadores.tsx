@@ -36,11 +36,55 @@ export default function Fundadores() {
             role: "Ingeniero de Software",
             description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
             image: "/images/fundadores/edwin2.png"
-        }
+        },
+
+    ];
+{/*TAREJTAS EQUIPO DE TRABAJO */}
+
+const [showTeam, setShowTeam] = useState(false);
+const [currentTeam, setCurrentTeam] = useState(0);
+
+const toggleTeam = () => {
+        setShowTeam(!showTeam);
+    };
+
+    const nextTeam = () => {
+        setCurrentTeam((prev) => (prev === 3 ? 0 : prev + 1));
+    };
+
+    const prevTeam = () => {
+        setCurrentTeam((prev) => (prev === 0 ? 3 : prev - 1));
+    };
+
+    const team = [ 
+        {
+            name: "ING. Efrain G. Samano Mora",
+            role: "Ingeniero en Electronica",
+            description: "Ingeniero electrico con experiencia en desarrollo de sistemas inteligentes y de automatización.",
+            image: "/images/equipo/efrain.png"
+        }, 
+        {
+            name: "ING. Isai Mendez Garcia",
+            role: "Ingeniero de Software",
+            description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
+            image: "/images/equipo/isai.png"
+        }, 
+        {
+            name: "LAD. Itzel Adilene Zavala Gaytán",
+            role: "Ingeniero de Software",
+            description: "Ingeniero de software con experiencia en desarrollo de sistemas inteligentes y publicaciones en revistas científicas. Apasionado por la programación y la colaboración interdisciplinaria.",
+            image: "/images/equipo/itzel.png"
+        },
+        {
+            name: "Jose Guadalupe Torres Diaz",
+            role: "Programador",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            image: "/images/equipo/jose.png"
+        }, 
     ];
 
-    return (
-        <div className="relative w-full min-h-19">
+return (
+<div className="relative w-full min-h-19">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="/images/fondo.png" 
@@ -53,19 +97,10 @@ export default function Fundadores() {
                         <div className="absolute inset-0 bg-black/10"></div>
                     </div>
             
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> 
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40"></div>
+        
             <div className="relative z-10 p-6 text-white w-auto h-auto flex items-center justify-center flex-col">
                 <div className='w-full max-w-6xl mx-auto'>
-                    <div className="flex items-center justify-center">
-
-
-
-
-                    </div>
-
-
-
                     <p className='text-4xl uppercase p-2 text-center font-medium'>Sobre Nosotros</p>
                     <p className="text-xl font-light p-2 text-center max-w-3xl mx-auto">
                         En INSOEL, lideramos la automatización con innovación y eficiencia.
@@ -74,19 +109,8 @@ export default function Fundadores() {
                         sino que definen el futuro de la automatización.
                     </p>
                     <p className="mt-4 font-light p-2 text-center text-xl">INSOEL - Automatización redefinida</p>
-                    
-                    <div className="text-center mt-8">
-                        <button 
-                            onClick={toggleFounders}
-                            className="bg-blue-800 hover:bg-blue-700 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
-                        >
-                            {showFounders ? 'OCULTAR FUNDADORES' : 'VER FUNDADORES'}
-                        </button>
-                    </div>
-
-                    {/* Sección desplegable de fundadores */}
-                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${showFounders ? 'max-h-[1000px]' : 'max-h-0'}`}>
-                        {/* Versión desktop - 3 fundadores en grid */}
+                    <div className="flex items-center justify-center">
+                        <div className="flex flex-col items-center">
                         <div className="hidden md:grid grid-cols-3 gap-8 p-6 bg-white/10 backdrop-blur-3xl rounded-lg mt-4">
                             {founders.map((founder, index) => (
                                 <div key={index} className="flex flex-col items-center text-center p-6 bg-white rounded-lg">
@@ -162,7 +186,76 @@ export default function Fundadores() {
                         </div>
                     </div>
                 </div>
+{/* Equipo de trabajo */}
+                    
+                    <div className="text-center mt-8">
+                        <button 
+                            onClick={toggleTeam}
+                            className="bg-blue-800 hover:bg-blue-700 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center mb-3"
+                        >
+                            {showFounders ? 'OCULTAR EQUIPO DE TRABAJO' : 'VER EQUIPO DE TRABAJO'}
+                        </button>
+                    </div>
+
+                    {/* Sección desplegable de fundadores */}
+                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${showTeam ? 'max-h-[1000px]' : 'max-h-0'}`}>
+                        {/* Versión desktop - 3 fundadores en grid */}
+                        <div className="relative p-6 bg-white/10 backdrop-blur-3xl rounded-lg mt-4">
+                                                                <div className="overflow-hidden">
+                                <div 
+                                    className="flex transition-transform duration-300 ease-in-out"
+                                    style={{ transform: `translateX(-${currentTeam * 100}%)` }}
+                                >
+                                    {team.map((team, index) => (
+                                        <div 
+                                            key={index}
+                                            className="flex-shrink-0 w-full flex flex-col items-center text-center p-6 bg-white rounded-lg"
+                                        >
+                                            <Image
+                                                src={team.image}
+                                                alt={team.name} 
+                                                width={300}  
+                                                height={300}
+                                                className="mx-auto rounded-full"
+                                            />
+                                            <p className="text-xl font-bold mt-4 text-darktext-100">{team.name}</p>
+                                            <p className="italic text-darktext-100 mt-4">{team.role}</p>
+                                            <p className="mt-4 font-light text-darktext-100 text-lg">{team.description}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                            {/* Controles del carrusel */}
+                            <div className="flex justify-between items-center mt-6">
+                                <button 
+                                    onClick={prevTeam}
+                                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300"
+                                >
+                                    &larr;
+                                </button>
+                                
+                                <div className="flex space-x-2">
+                                    {team.map((_, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => setCurrentTeam(index)}
+                                            className={`w-3 h-3 rounded-full ${currentFounder === index ? 'bg-white' : 'bg-gray-400'}`}
+                                            aria-label={`Ir al fundador ${index + 1}`}
+                                        />
+                                    ))}
+                                </div>
+                                
+                                <button 
+                                    onClick={nextTeam}
+                                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full transition duration-300"
+                                >
+                                    &rarr;
+                                </button>
+                            </div>
+                    </div>
+                </div>
             </div>
-        </div>
+</div>
     );
 }

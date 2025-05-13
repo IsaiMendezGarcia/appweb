@@ -1,7 +1,7 @@
 // ui/automatizacion/projectAutoVista.tsx
 import { GenericCards } from '../componentes_generales/GenericCards';
 
-// Datos compartidos (se usan en listado y detalles)
+
 export const devsProjects = [
   {
       
