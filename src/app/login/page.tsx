@@ -9,7 +9,6 @@ export default function LoginPage() {
       <main className="flex-grow">
        <Vistalogin />
       </main>
-      <Footer />
     </div>
   );
 }

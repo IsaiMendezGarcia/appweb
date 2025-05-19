@@ -137,7 +137,6 @@ export default function Fundadores() {
             En INSOEL, lideramos la automatización con innovación y eficiencia.
             Integramos tecnología avanzada para optimizar procesos, transformar industrias y acelerar el progreso empresarial.
           </p>
-          
           {/* Founders - Desktop version */}
           <div className="hidden md:grid grid-cols-3 gap-4 md:gap-8 p-4 md:p-6 bg-white/10 backdrop-blur-3xl rounded-lg mt-4">
             {founders.map((founder, index) => (
@@ -175,6 +174,7 @@ export default function Fundadores() {
                     <p className="text-lg font-bold mt-3 text-darktext-100">{founder.name}</p>
                     <p className="italic text-sm text-darktext-100 mt-1">{founder.role}</p>
                     <p className="mt-2 font-light text-darktext-100 text-xs">{founder.description}</p>
+                    
                   </div>
                 ))}
               </div>
